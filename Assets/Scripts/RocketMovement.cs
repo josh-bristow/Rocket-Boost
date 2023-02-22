@@ -1,18 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RocketMovement : MonoBehaviour
 {        
+    [SerializeField] float mainThrust = 1500f;
+    [SerializeField] float rotationThrust = 300f;
+    [SerializeField] AudioClip mainEngine;
+
     Rigidbody rb;
-    float mainThrust = 1500f;
-    float rotationThrust = 300f;
+    AudioSource audioSource;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         ProcessThrust();
@@ -21,12 +23,16 @@ public class RocketMovement : MonoBehaviour
 
     void ProcessThrust()
     {
-
-
-
-        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(mainEngine);
+            } 
+        } else
+        {
+            audioSource.Stop();
         }
     }
 
