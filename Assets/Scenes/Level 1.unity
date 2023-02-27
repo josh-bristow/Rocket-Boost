@@ -173,7 +173,7 @@ Transform:
   - {fileID: 441471490}
   - {fileID: 1918406516}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &684673394
 GameObject:
@@ -205,8 +205,9 @@ Transform:
   m_Children:
   - {fileID: 3707883544783289054}
   - {fileID: 735109513}
+  - {fileID: 1195852855}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &691101186 stripped
 Transform:
@@ -305,7 +306,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &735109512
 PrefabInstance:
@@ -574,15 +575,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 684673395}
     m_Modifications:
     - target: {fileID: 5840166380232440956, guid: 355bea1cd4a8b624eab021ee331c681e, type: 3}
       propertyPath: m_Name
-      value: ObstacleCube
+      value: ObstacleCube (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7414120291054112075, guid: 355bea1cd4a8b624eab021ee331c681e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414120291054112075, guid: 355bea1cd4a8b624eab021ee331c681e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 12.144001
       objectReference: {fileID: 0}
     - target: {fileID: 7414120291054112075, guid: 355bea1cd4a8b624eab021ee331c681e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -626,6 +631,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 355bea1cd4a8b624eab021ee331c681e, type: 3}
+--- !u!4 &1195852855 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7414120291054112075, guid: 355bea1cd4a8b624eab021ee331c681e, type: 3}
+  m_PrefabInstance: {fileID: 1195852854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1227246240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -725,7 +735,7 @@ Transform:
   m_Children:
   - {fileID: 2088695370}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1879710108 stripped
 Transform:

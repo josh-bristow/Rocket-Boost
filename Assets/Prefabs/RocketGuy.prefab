@@ -305,6 +305,7 @@ GameObject:
   - component: {fileID: 2088695371}
   - component: {fileID: 6682224286179056195}
   - component: {fileID: 2950298517841120705}
+  - component: {fileID: 2088695376}
   m_Layer: 0
   m_Name: RocketGuy
   m_TagString: Untagged
@@ -495,6 +496,18 @@ MonoBehaviour:
   victorySound: {fileID: 8300000, guid: c47b7689e57e85d40af364796d7928b9, type: 3}
   crashParticles: {fileID: 3500074014101321925}
   victoryParticles: {fileID: 7880811106957630507}
+--- !u!114 &2088695376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125193990641216821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98c49e1523bfed4c86c58ad07ea87e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4277897533734512454
 GameObject:
   m_ObjectHideFlags: 0
